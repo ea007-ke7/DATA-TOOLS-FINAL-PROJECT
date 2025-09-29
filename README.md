@@ -1,9 +1,4 @@
 # DATA-TOOLS-FINAL-PROJECT
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
 
 REQUIRED SECTIONS:
 - Table of Contents
@@ -59,15 +54,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 E-LEARNING PLATFORM DATABASE
 
-> Describe your project in 1 or 2 sentences.
+This project is a simple relational database for an E-learning Platfom.  
+It models students, courses, and their enrollments.  
 
-**[your_project__name]** is a...
+## 🛠 Built With "PostgreSQL" (via [Supabase](https://supabase.com)).
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack 
+- **Database**: PostgreSQL, hosted on Supabase
+- **Tools**: Supabase SQL Editor, Supabase CLI
+- **Diagram**: Entity Relationship Diagram (ERD)
 
 > Describe the tech stack and include only the relevant sections that apply to your project e.g SQL.
 
@@ -94,13 +91,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+### Key Features 
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+ Three relational tables: `students`, `courses`, `enrollments`
+  
+-  At least **5 sample rows per table**
+-  Foreign key relationships (`students ↔ enrollments`, `courses ↔ enrollments`)
+-  Schema exported as `schema.sql`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,11 +123,18 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
+A Supabase account (free)
+(Optional) PostgreSQL installed locally
+(Optional) Supabase CLI installed
+Install
+
+No installation required. Just run the SQL script.
+
+
+Depl
 Example command:
 
-```sh
- gem install rails
+```shgem install rails
 ```
  -->
 
@@ -149,20 +153,28 @@ Example commands:
 
 ### Install
 
-Install this project with:
+No installation required. Just run the SQL script.
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
 To run the project, execute the following command:
+
+Log in to Supabase.
+
+Open the SQL Editor.
+
+Copy-paste the contents of schema.sql.
+
+Run the script → tables and sample data will be created.
+
+Run tests
+You can test queries like:
+
+SELECT * FROM students;
+SELECT * FROM courses;
+SELECT * FROM enrollments;
+
 
 <!--
 Example command:
@@ -174,15 +186,11 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following SQL commands:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+SELECT * FROM students;
+SELECT * FROM courses;
+SELECT * FROM enrollments;
 
 ### Deployment
 
