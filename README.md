@@ -1,4 +1,4 @@
-# DATA-TOOLS-FINAL-PROJECT
+# data-tools-final-project
 
 REQUIRED SECTIONS:
 - Table of Contents
