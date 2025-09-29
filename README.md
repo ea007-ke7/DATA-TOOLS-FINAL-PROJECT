@@ -168,22 +168,6 @@ Copy-paste the contents of schema.sql.
 
 Run the script → tables and sample data will be created.
 
-Run tests
-You can test queries like:
-
-SELECT * FROM students;
-SELECT * FROM courses;
-SELECT * FROM enrollments;
-
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
 ### Run tests
 
 To run tests, run the following SQL commands:
@@ -194,15 +178,9 @@ SELECT * FROM enrollments;
 
 ### Deployment
 
-You can deploy this project using:
+This is a schema-only project.
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+Deployment = loading schema.sql into Supabase or any PostgreSQL instance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,15 +188,7 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
@@ -230,11 +200,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- Add instructors table
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Add assignments and grades tables
+
+- Role-based access control (students vs instructors)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,9 +222,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, please ⭐️ the repo!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -264,7 +232,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Almighty God for His goodness, Mrs. Joy for her continuous support & guidance throughout the project, Dennis Muriithi for being accommodative & supportive, my peers & of course Supabase for free PostgreSQL hosting.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -272,11 +240,9 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+Q1: Can I run this without Supabase?
 
-- **[Question_1]**
-
-  - [Answer_1]
+A: Yes, just use PostgreSQL locally and run schema.sql.
 
 - **[Question_2]**
 
